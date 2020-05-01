@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+  font-size: 100%;
+  color: rgba(1,1,1,.8);
+  background: url('assets/hatter.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+#vaszon {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height:70vh;
+  flex-direction: column;
+  margin: auto
+}
+/.red {
+  background-color: rgba(255,0,0,.6);
+}
+.blue {
+  background-color: rgba(0,0,255,.6);
+  margin: 5px;
+}
+.green {
+  background-color: rgba(0,255,0,.6);
+}
+.yellow {
+  background-color: hsla(56, 98%, 53%, 0.76);
+}
+.gray {
+  background-color: gray;
+}*/
+#vaszon {
+  width: 100nw;
+  height: auto;
+}
+
+#oldalvalaszt {
+  width: 120px;
+  height: 90px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 120%;
+}
+#tartalom {
+  width: 90%;
+  max-width: calc(100vw - 20px);
+  text-align: center;
+}
+#profilkep {
+  width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: -20px;
+  border-radius: 5%;
+  padding: 1px;
+  background-color: rgba(1,1,1,.9); 
+}
+#profilkep:hover {
+  transform: scale(1.3);
+  transition: all 1s ease-in-out;
+}
+#profil {
+  text-align: center;
+}
+#nev {
+  text-align: center;
+  font-size: 200%;
+  line-height: 1.5;
+  padding-top: 20px;
+  border-top: 1px solid rgba(1,1,1,.9);
+}
+#oldalvalaszt, #tartalom {
+  background-color: rgba(240,210,112,.4);
+  box-shadow: rgba(240,210,112,.8) 10px 10px 50px;
+  border-radius: 5%;
+}
+.valaszt {
+  color: rgba(1,1,1,.8);
+}
+h1 {
+ font-size: 150%;
+  text-transform: uppercase;
+}
+#komolykep {
+  width: 150px;
+  height: auto;
+  float: left;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+  border-radius: 5%;
+  padding: 1px;
+  background-color: rgba(1,1,1,.9);
+  filter: grayscale(50%);
+}
+#komolykep:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  transition: all 1s ease-in-out;
+}
+#magamszoveg {
+  font-size: 150%;
+  text-align: justify; 
+}
+#magamszoveg::first-letter {
+  padding-left: 20px;
+}
