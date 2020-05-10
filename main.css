@@ -27,8 +27,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height:70vh;
+  width: 95vw;
+  height:100vh;
   flex-direction: column;
   margin: auto
 }
@@ -36,18 +36,18 @@ body {
 #oldalvalaszt {
   width: 120px;
   height: 90px;
-  margin-top: 50px;
-  margin-left: 20px;
+  position: fixed;
+  top: 50px;
+  left: 20px;
   font-size: 120%;
 }
 .tartalom {
   width: 480px;
   max-width: calc(100vw - 20px);
-  text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #tartalom {
   width: 480px;
@@ -109,18 +109,38 @@ h1 {
 #magamszoveg {
   font-size: 150%;
   text-align: justify;
-  margin-top: 50px;
+  margin: 50px 15px 15px 15px;
 }
 #magamszoveg::first-letter {
   padding-left: 40px;
 }
 #utazas, #kutyak, #gastro {
-  width: 750px;
-  margin: 10px;
+  width: 320px;
+  height: 300px;
+  margin: 10px;  
+}
+#kepek {
+  position: relative;
+  height: 90vh;
+}
+#utazas {
+  left: -50px;
+  top: 10px;
+  position: absolute;
+}
+#kutyak {
+  right: -100px;
+  top: 10px;
+  position: absolute;
+}
+#gastro {
+  bottom: -30px;
+  right: 0 0;
+  position: absolute;
 }
 .utazas, .kutya, .gastro {
   width: auto;
-  height: 150px;
+  height: 120px;
   float: left;
   margin: 5px;
   border-radius: 5%;
@@ -128,33 +148,27 @@ h1 {
   background-color: rgba(1,1,1,.9);
 }
 .utazas:hover {
-  transform: scale(2);
+  transform: scale(2.3);
   transition: all 1s ease-in-out;
 }
 .kutya:hover {
-  transform: scale(2);
+  transform: scale(2.3);
   transition: all 1s ease-in-out;
 }
 .gastro:hover {
-  transform: scale(2);
+  transform: scale(2.3);
   transition: all 1s ease-in-out;
 }
 legend {
   font-size: 150%;
-}
-.dolgok {
-  display: flex;
-  justify-content: center;
-}
-.kepek {
-  margin-top: -90px
+  text-align: center;
 }
 .ikon {
   color: rgba(1,1,1,.8);
   margin: 5px;
 }
 .fa-5x:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(1.4);
   transition: all 1s ease-in-out;
 }
 .kontakt {
